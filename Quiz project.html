@@ -1,0 +1,33 @@
+<!-- frame-1
+this cntains the intial options like
+login ,register-->
+<html>
+    <head>
+        <style>                                                                    
+            .sig,.log{width:30%;text-align: right;display: inline};                              
+                
+            
+        </style>
+        <script language="javascript">
+            function mylog()
+            {
+                <form id="l">
+                    User Name:<input type="text" value="username"></input><br/> <br/>
+                    Password:<input type="password" maxlength="5"></input><br/><br/>
+                    <input type="radio" value="button">I am not a Robot</input><br/><br/>
+                    <input type="button" value="Submit" id="s" onclick="my()"></input>
+                </form> 
+            }
+            function my()
+            {alert("You have successfully Logged in!!");}
+        </script>
+        <body>
+           <div class="log">                                                          <!--login button-->
+               <button type="button" onclick="mylog()">Login</button> 
+           </div>
+           <div class="sig">                                                           <!--sign-in button-->
+                <button type="button" onclick="mysig()">Sign-in</button>
+           </div>
+        </body>
+    </head>
+</html>
